@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SEV BERLIN</title>
+<link href="sev.css" rel="stylesheet" type="text/css">
+<script>
+
+$('.mitte_1').mouseover(function() {  
+    
+    var bgToAnimate = $(this);    
+    
+    bgToAnimate.animate({'background-color': 'blue'}, 5000, function(){        
+        bgToAnimate.animate({'background-color': 'yellow'}, 5000, function(){            
+            bgToAnimate.animate({'background-color': 'green'}, 5000, function(){ 
+                 bgToAnimate.animate({'background-color': 'red'}, 5000, function(){          
+                    bgToAnimate.animate({'background-color': 'blue'}, 5000);   
+                    
+              }); 
+           });
+        });        
+    });
+});
+
+$('.mitte_1').onload(function() {  
+    $(this).css( 'background-color','' );  
+});
+</script>
+</head>
+
+<body onload="myFunc()">
+
+    <div class="grid-container">
+        <div class="grid__item oben"></div>
+        
+        <div class="grid__item links"></div>
+        
+        <div class="mitte_1">
+            <div class="mitte_2"></div>
+        <!-- Inhaltsbereich mit allen sichtbaren Elementen -->
+        	<div id="sev-hgimg"></div>
+            <div id="sev-logo">
+                <!-- <object data="img/sev_logo.svg" type="image/svg+xml" width="100%" height="100%">
+                <img srv="img/sev-logo.svg" alt="Hintergrundbild sev" class="img-logo">
+                </object> -->
+            </div>
+            <div id="sev-willkommen" class="clip"></div>
+            <div id="sev-startxt">
+            <p class="sev-startxt">Our mission is to encourage people to share their knowledge, interact with each other and create something new within the framework of a curated musical program. We have made it our objective to combine knowledge transfer with club culture and to support newcomers. This happens, besides other events, in the context of our SEV Sessions which take place monthly in Berlin.
+<br><br>
+        </p>
+                <!-- <p class="sev-startxt">More information soon!</p> -->
+            </div>
+
+        </div>
+        
+        <div class="grid__item rechts"></div>
+        
+        <div class="grid__item unten">
+            <div class="social">
+				<div id="facebook"><a href="https://www.facebook.com/sevberlin/" target="_blank"><img src="img/facebook.svg" alt="facebook logo"></a></div>
+				<div id="instagram"><a href="https://www.instagram.com/sev.berlin/" target="_blank"><img src="img/instagram.svg" alt="instagram logo"></a></div>
+				<div id="resident"><a href="https://www.residentadvisor.net/profile/sevsessions" target="_blank"><img src="img/resident-advisor.svg" alt="resident advisor logo"></a></div>
+                <div id="soundcloud"><a href="https://soundcloud.com/sevberlin" target="_blank"><img src="img/soundcloud.svg" alt="soundcloud logo"></a></div>
+                <!-- <div class="menu"><a href="#test" target="_parent">TEST</a></div> -->
+			</div>
+        <!-- ENDE Inhaltsbereich mit allen sichtbaren Elementen -->
+        </div>        
+</div>
+
+<!-- Inhaltsbereich onepage
+        <div id="content">
+            <div  class="content">
+            <h1 id="test">test</h1>
+            Testtest
+        </div>
+        </div> -->
+</body>
+</html>
