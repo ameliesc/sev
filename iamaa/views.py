@@ -9,5 +9,5 @@ def home(request):  ## rename to match imaa
     welcome_text = Welcome.objects.all()
     return render(request, 'iamaa/home.html' , {'welcome_text' : welcome_text})
 
-def aboutus(request):
-    pass
+def about(request):
+    return render(request,'iamaa/aboutpage.html')
