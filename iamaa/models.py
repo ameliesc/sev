@@ -34,3 +34,7 @@ class Comment(models.Model):
         self.save()
 
 
+
+
+class Welcome(models.Model):
+    text = models.TextField()
