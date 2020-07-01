@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>SEV BERLIN</title>
-<link href="sev.css" rel="stylesheet" type="text/css">
+<link href="static/home.css" rel="stylesheet" type="text/css">
 <script>
 
 $('.mitte_1').mouseover(function() {  
@@ -45,12 +45,18 @@ $('.mitte_1').onload(function() {
                 </object> -->
             </div>
             <div id="sev-willkommen" class="clip"></div>
-            <div id="sev-startxt">
-            <p class="sev-startxt">{{welcome_text}}
-<br><br>
+	    <div id="sev-startxt">
+	      <p class="sev-startxt">
+	    {% for text in welcome_text %}
+	    {{ text.text }}
+	    {% endfor %}
+	    <br><br>
         </p>
+	    </div>
+	    
+
                 <!-- <p class="sev-startxt">More information soon!</p> -->
-            </div>
+
 
         </div>
         
@@ -58,10 +64,10 @@ $('.mitte_1').onload(function() {
         
         <div class="grid__item unten">
             <div class="social">
-				<div id="facebook"><a href="https://www.facebook.com/sevberlin/" target="_blank"><img src="img/facebook.svg" alt="facebook logo"></a></div>
-				<div id="instagram"><a href="https://www.instagram.com/sev.berlin/" target="_blank"><img src="img/instagram.svg" alt="instagram logo"></a></div>
-				<div id="resident"><a href="https://www.residentadvisor.net/profile/sevsessions" target="_blank"><img src="img/resident-advisor.svg" alt="resident advisor logo"></a></div>
-                <div id="soundcloud"><a href="https://soundcloud.com/sevberlin" target="_blank"><img src="img/soundcloud.svg" alt="soundcloud logo"></a></div>
+				<div id="facebook"><a href="https://www.facebook.com/sevberlin/" target="_blank"><img src="static/img/facebook.svg" alt="facebook logo"></a></div>
+				<div id="instagram"><a href="https://www.instagram.com/sev.berlin/" target="_blank"><img src="static/img/instagram.svg" alt="instagram logo"></a></div>
+				<div id="resident"><a href="https://www.residentadvisor.net/profile/sevsessions" target="_blank"><img src="static/img/resident-advisor.svg" alt="resident advisor logo"></a></div>
+                <div id="soundcloud"><a href="https://soundcloud.com/sevberlin" target="_blank"><img src="static/img/soundcloud.svg" alt="soundcloud logo"></a></div>
                 <!-- <div class="menu"><a href="#test" target="_parent">TEST</a></div> -->
 			</div>
         <!-- ENDE Inhaltsbereich mit allen sichtbaren Elementen -->
