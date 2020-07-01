@@ -15,3 +15,4 @@ class HomeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Welcome, HomeAdmin)
+#admin.site.register(Welcome)
