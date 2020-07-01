@@ -5,6 +5,6 @@ from .models import ArtistIntroduction
 def posts(request):  ## rename to match imaa
     artist = ArtistIntroduction.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 
-    return render(request, 'iamaa/imaa.html')
+    return render(request, 'iamaa/iamaa.html')
 
 
