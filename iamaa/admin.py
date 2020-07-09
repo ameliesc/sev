@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import ArtistIntroduction, Comment, Welcome
+from .models import Welcome, Description
 
 
 
@@ -15,4 +15,4 @@ class HomeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Welcome, HomeAdmin)
-#admin.site.register(Welcome)
+admin.site.register(Description)

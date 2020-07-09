@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
 
+
   <!-- Custom CSS -->
   <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
   <link href= "{% static 'new_home.css' %}" rel="stylesheet">
@@ -50,6 +51,8 @@ $('.mitte_1').onload(function() {
 
 <body id="page-top"  onload="myFunc()">
 
+
+
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
     <i class="fas fa-bars"></i>
@@ -63,9 +66,6 @@ $('.mitte_1').onload(function() {
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#about">About</a>
       </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
       <!-- <li class="sidebar-nav-item"> -->
       <!--   <a class="js-scroll-trigger" href="#portfolio">Portfolio</a> -->
       <!-- </li> -->
@@ -76,166 +76,146 @@ $('.mitte_1').onload(function() {
   </nav>
 
   <!-- Header -->
-  <div class="container text-center my-auto">
+  <div class="container">
     <section id="welcome" class="home_scroll" >
-    <div class="grid-container">
-      <div class="grid__item oben"></div>
       
-      <div class="grid__item links"></div>
       
-      <div class="mitte_1">
-        <div class="mitte_2"></div>
-        <!-- Inhaltsbereich mit allen sichtbaren Elementen -->
-        <div id="sev-hgimg"></div>
-        <div id="sev-logo">
-          <!-- <object data="img/sev_logo.svg" type="image/svg+xml" width="100%" height="100%">
-               <img srv="img/sev-logo.svg" alt="Hintergrundbild sev" class="img-logo">
-          </object> -->
-        </div>
-        <div id="sev-willkommen" class="clip"></div>
-	<div id="sev-startxt">
-	  <p class="sev-startxt">
-	    {% for text in welcome_text %}
-	    {{ text.text }}
-	    {% endfor %}
-	    <br><br>
-          </p>
-	  <a href="#icons"> 
-	     <span></span> Find Out More
+       <div class="grid-container">
+	 <div class="grid__item oben"></div>
+	 
+	 <div class="grid__item links"></div>
+	 
+	 <div class="mitte_1">
+           <div class="mitte_2"></div>
+           <!-- Inhaltsbereich mit allen sichtbaren Elementen -->
+           <div id="sev-hgimg"></div>
+           <div id="sev-logo"> </div>
+           <div id="sev-willkommen" class="clip"></div>
+	   <div id="sev-startxt">
+	     <p class="sev-startxt">
+	       {% for text in welcome_text %}
+	       {{ text.text }}
+	       {% endfor %}
+	       <br><br>
+             </p>
+	     <a href="#icons"> 
+	       <span></span> Find Out More
+	     </a>
+	  </div>
+	   
+	   
+           <!-- <p class="sev-startxt">More information soon!</p> -->
+	   
+	   
+	 </div>
+	 <div class="overlay"></div>
+	 
+       </div>
+       
+    </section>
+  </div>
+  
+
+  <!-- About -->
+ 
+    <div class="container text-center my-auto bottom-buffer">
+      <section class="content-section"  id="icons">
+      <div class="content-section-heading top-buffer3">
+      </div>
+      <div class="row ">
+	<div class="col-md-2 col-md-offset-5"></div>
+	{% for description in sev_sessions%}
+	
+	<div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+	  <a  href="#{{description.id}}">
+	    <span>
+	      <h4 class="sev-startxt">
+		<img src="{{description.icon_image.url}}" />
+		
+	    </span>
 	  </a>
 	</div>
 	
-	
-        <!-- <p class="sev-startxt">More information soon!</p> -->
-	
-	
+	{% endfor %}
+	 </section>
       </div>
-      <div class="overlay"></div>
-      </section>
-    </div>
+ 
+      
+      <!-- About descriptions -->
 
+    <div class="container text-center my-auto" id="Sessions">
+      <section class="content-section" id="about">
+      {% for description in sev_sessions %}
+      <div class="row top-buffer7">
+        <div class="col-lg-10 mx-auto">
+	  
+	  <h4 class= "sev-startxt" id ={{description.id}}> {{description.title}}  </h4 >
+	  <p class="sev-txt"> {{description.text}} </p>
+	  {% endfor %}
+	  
+      </section>
+      </div>
+
+        <ul class="list-group flex-md-row">
+            <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white mr-3" href="https://www.facebook.com/sevberlin/">
+		<i class="icon-social-facebook"></i>
+          </a>
+        </li>
+            <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white mr-3" href="https://soundcloud.com/sevberlin">
+		<i class="icon-social-soundcloud"></i>
+          </a>
+        </li>
+            <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white" href="https://www.instagram.com/sev.berlin/">
+		<i class="icon-social-instagram"></i>
+          </a>
+            </li>
+	      <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white" href="https://www.residentadvisor.net/profile/sevsessions">
+		<i class="icon2-resident-advisor"></i>
+          </a>
+            </li>
+	  </ul>
   
 
-    <!-- About -->
- <div class="container text-center my-auto">
-  <section class="content-section"  id="icons">
 
-      <div class="content-section-heading">
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <a  href="#Session1" >
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-	  </a>
-          <h4 class="sev-startxt">
-            <strong>SEV Sessions</strong>
-          </h4>
-          <p class="sev-txt"> Description 1</p>
-        </div>
-	 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-           <a  href="#Session2" >
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-	  </a>
-          <h4 class="sev-startxt">
-            <strong>SEV Sessions</strong>
-          </h4>
-          <p class="sev-txt"> Description 1</p>
-        </div> <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-         <a  href="#Session3" >
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-	  </a>
-          <h4 class="sev-startxt">
-            <strong>SEV Sessions</strong>
-          </h4>
-          <p class="sev-txt"> Description 1</p>
-         </div> <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-	   <a  href="#Session4" >
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-	  </a>
-           <h5 class="sev-startxt"> SEV Sessions </h5>
-           <p class="sev-txt"> Description 1</p>
-        </div>
-  </section>
-  </div>
 
- <!-- About -->
- <div class="container text-center my-auto" id="Session1">
-  <section class="content-section" id="about">
-
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h4 class= "sev-startxt"> Sessions </h4>
 	  
-          <p class="sev-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-         </section>
-        </div>
-
- <section class="content-section" id="">
-	  <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h4 class= "sev-startxt"> Sessions </h4>
-	  
-          <p class="sev-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-         
-        </div>
-	  <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h4 class= "sev-startxt"> Sessions </h4>
-	  
-          <p class="sev-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-         
-        </div>
-	<div class="row">
-	  
-        <div class="col-lg-10 mx-auto">
-          <h4 class= "sev-startxt"> Sessions </h4>
-	  
-          <p class="sev-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-         
-        </div>
 	
-
-    </div>
-  </section>
-</div>
-
-
-
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
+	<!-- Footer -->
+      <footer class="footer text-center">
+	<div class="container text-center">
+	
+	  <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white mr-3" href="https://www.facebook.com/sevberlin/">
+		<i class="icon-social-facebook"></i>
           </a>
         </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
+            <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white mr-3" href="https://soundcloud.com/sevberlin">
+		<i class="icon-social-soundcloud"></i>
           </a>
         </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
+            <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white" href="https://www.instagram.com/sev.berlin/">
+		<i class="icon-social-instagram"></i>
           </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+            </li>
+	      <li class="list-inline-item">
+              <a class="social-link2 rounded-circle text-white" href="https://www.residentadvisor.net/profile/sevsessions">
+		<i class="icon2-resident-advisor"></i>
+          </a>
+            </li>
+	  </ul>
+	  <p class="text-muted small mb-0">Copyright &copy; Amelie Schmidt-Colberg 2020</p>
+	</div>
+      </footer>
+      
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
 
