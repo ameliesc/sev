@@ -124,6 +124,31 @@ footer.footer .social-link2:hover {
   background: #343a40;
 }
 
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background:#1c1c1a;
+  color: white;
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background:  #262622 ;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
 @font-face {
   font-family: "rafont";
   src:url("fonts/rafont.eot");
@@ -191,6 +216,8 @@ a, u {
 .icon-bar {
   position: fixed;
   top: 50%;
+  left: 1%;
+  color:white
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -208,51 +235,22 @@ a, u {
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-   background-color: #515557;
-  text-decoration: none;
+    background-color: #262622 ;
+    color: white;
+ 
 }
 
-.facebook{display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  Background-color: #6b7173;
-  transition: background-color 0.15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-
-.twitter{
+.facebook{
     display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  Background-color: #6b7173;
-  transition: background-color 0.15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    height: 4rem;
+    width: 4rem;
+    line-height: 2.3rem;
+    font-size: 15rem;
+    Background-color: black;
+    color:white;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.google {
-    display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  Background-color: #6b7173;
-  transition: background-color 0.15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
 
-.linkedin {
-    display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  Background-color: #6b7173;
-  transition: background-color 0.15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
 
