@@ -215,7 +215,7 @@ a, u {
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 50%;
+  top: 80%;
   left: 1%;
   color:white
   -webkit-transform: translateY(-50%);
