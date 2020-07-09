@@ -53,15 +53,16 @@ a:hover, a:active, a:focus { /* Durch diese Gruppe von Selektoren wird bei Verwe
 
 
 .grid-container {
-
   max-width: 100%;
   min-height: 98vh;
   height: 100%;
   display: grid;
-
-  grid-template-columns: 1fr 100% 1fr;
+  grid-template-columns: 2rem auto 2rem;
   grid-template-rows: 1fr 19fr 1fr;
-  grid-template-areas: "oben oben oben" "links mitte rechts" "unten unten unten";
+  grid-template-areas:
+    "oben oben oben"
+    "links mitte rechts"
+    "unten unten unten";
   align-items: stretch;
   margin: 0;
 }
@@ -185,7 +186,7 @@ img {
 
 /* #sev-hgimg; */ 
 .mitte_1{
-      width:100%; height:auto; margin: 0; z-index:3; 
+    width:100%; height:auto; margin: 0; z-index:3; 
     background: rgb(0,0,255) url(img/sev_bg_start.png) repeat; 
 	animation: mitte_1 96s linear infinite;
     background-size: calc(100% + 2vw);
@@ -208,6 +209,20 @@ img {
 	
 #sev-logo {
 	position: absolute;
+	top: 25px;
+	left: calc(38% + 2vw);
+	width: calc(12% + 2vw);
+	height: 100%;
+	margin: 0 auto;
+	z-index: 2;
+	background: url(img/sev_logo.png) no-repeat;
+	background-size: 100%;
+	background-position: top center;
+	right: calc(38% + 2vw);
+}
+
+#sev-willkommen {
+	position: absolute;
 	top: 30%;
 	left: 9.5%;
 	width: 100%;
@@ -221,7 +236,6 @@ img {
 	/* clip: rect(0 1500px 580px 48px);*/
 	clip-path: inset(0 0 30vh 0vw);
 }
-
 
 #sev-startxt{position:absolute;  top: 45%; left: calc(100% - 79%); width:56%; height:auto; margin:0; z-index:4;}
 
