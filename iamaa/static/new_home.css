@@ -16,11 +16,13 @@ ul li {
   
 }
 
-.sev-txt{font-size:0.5vw; color:#fff; text-align:center; font-family:'Syne-Regular';}
+.sev-txt{font-size:1.5vw; color:#fff; text-align:center; font-family:'Syne-Regular';}
 
 .top-buffer7 { margin-top:7%; }
 .top-buffer5 { margin-top: 3%}
-.bottom-buffer {margin-bottom: -20%}
+.top-buffer-5 { margin-top: -3%}
+
+.bottom-buffer {margin-bottom: -10%}
 
 
 footer.footer .social-link2 {
@@ -183,3 +185,74 @@ footer.footer .social-link2:hover {
 a, u {
     text-decoration: none;
 }
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+   background-color: #515557;
+  text-decoration: none;
+}
+
+.facebook{display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  Background-color: #6b7173;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.twitter{
+    display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  Background-color: #6b7173;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.google {
+    display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  Background-color: #6b7173;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.linkedin {
+    display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  Background-color: #6b7173;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
