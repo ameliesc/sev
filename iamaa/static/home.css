@@ -209,7 +209,6 @@ img {
 
 #sev-logo {
 	position: absolute;
-
 	top: 25px;
 	left: calc(38% + 2vw);
 	width: calc(12% + 2vw);
@@ -224,10 +223,9 @@ img {
 	
 #sev-willkommen{
 	position: absolute;
-
 	top: 30%;
 	left: 9.5%;
-	width: 100%;
+	width: calc(100% - 4rem);
 	height: 100%;
 	margin: 0;
 	background: url(img/willkommen.png) no-repeat;
