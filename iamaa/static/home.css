@@ -234,7 +234,7 @@ img {
 	background-position-y: 0;
 	background-size: 180%;
 	/* clip: rect(0 1500px 580px 48px);*/
-	clip-path: inset(0 0 40vh 0vw);
+	clip-path: inset(0% 0% 40% 0%);
 }
 
 #sev-startxt{position:absolute;  top: 45%; left: calc(100% - 79%); width:56%; height:auto; margin:0; z-index:4;}
