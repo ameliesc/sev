@@ -1,0 +1,263 @@
+@font-face {
+   font-family:'syne-regular';
+   font-style: normal;
+   font-weight: 700;
+   src: url(fonts/Syne-Regular.woff2) format('woff2'),
+	   	url(fonts/Syne-Regular.woff) format('woff');
+}
+.content-section {
+    background-color: rgb(0,0,0);
+    padding: 7.5rem 0;
+    margin: 0 2rem;
+}
+
+ul li {
+
+    padding: -10px;
+    display: block;
+  
+}
+
+.sev-txt{font-size:1.5vw; color:#fff; text-align:center; font-family:'Syne-Regular';}
+
+.top-buffer7 { margin-top:7%; }
+.top-buffer5 { margin-top: 3%}
+.top-buffer-5 { margin-top: -3%}
+
+.bottom-buffer {margin-bottom: -10%}
+
+
+footer.footer .social-link2 {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  Background-color: #6b7173;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link2:hover {
+  background-color: #515557;
+  text-decoration: none;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: #ffea05;
+  Border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: 	#000000;
+  padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: 	#000000;
+  background:#fffc5e;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #ffea05;;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color:  #ffea05;;
+  background: none;
+}
+
+.social-icons {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: 	#000000
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #ffea00;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background:#1c1c1a;
+  color: white;
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background:  #262622 ;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "rafont";
+  src:url("fonts/rafont.eot");
+  src:url("fonts/rafont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/rafont.woff") format("woff"),
+    url("fonts/rafont.ttf") format("truetype"),
+    url("fonts/rafont.svg#rafont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: "rafont";
+  src:url("fonts/rafont.eot");
+  src:url("fonts/rafont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/rafont.woff") format("woff"),
+    url("fonts/rafont.ttf") format("truetype"),
+    url("fonts/rafont.svg#rafont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon2]:before {
+  font-family: "rafont" !important;
+  content: attr(data-icon2);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon2-"]:before,
+[class*=" icon2-"]:before {
+  font-family: "rafont" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon2-resident-advisor:before {
+  content: "\72";
+}
+.icon2-beatport:before {
+  content: "\62";
+}
+
+a, u {
+    text-decoration: none;
+}
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 80%;
+  left: 1%;
+  color:white
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:visited {
+  color: white;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+    background-color: #262622 ;
+    color: white;
+ 
+}
+
+.facebook{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 2.3rem;
+    line-width: 1.0rem;
+    font-size: 15rem;
+    Background-color: black;
+    color:white;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
