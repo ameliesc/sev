@@ -1,0 +1,73 @@
+{% extends 'iamaa/home.html' %}
+$('.mitte_1').mouseover(function() {  
+    
+    var bgToAnimate = $(this);    
+    
+    bgToAnimate.animate({'background-color': 'blue'}, 5000, function(){        
+        bgToAnimate.animate({'background-color': 'yellow'}, 5000, function(){            
+            bgToAnimate.animate({'background-color': 'green'}, 5000, function(){ 
+                 bgToAnimate.animate({'background-color': 'red'}, 5000, function(){          
+                    bgToAnimate.animate({'background-color': 'blue'}, 5000);   
+                    
+              }); 
+           });
+        });        
+    });
+});
+
+$('.mitte_1').onload(function() {  
+    $(this).css( 'background-color','' );  
+});
+</script>
+</head>
+
+<body onload="myFunc()">
+  <section id="welcome" class="home_scroll">
+    <div class="grid-container">
+        <div class="grid__item oben"></div>
+        
+        <div class="grid__item links"></div>
+        
+        <div class="mitte_1">
+            <div class="mitte_2"></div>
+        <!-- Inhaltsbereich mit allen sichtbaren Elementen -->
+        	<div id="sev-hgimg"></div>
+            <div id="sev-logo">
+                <!-- <object data="img/sev_logo.svg" type="image/svg+xml" width="100%" height="100%">
+                <img srv="img/sev-logo.svg" alt="Hintergrundbild sev" class="img-logo">
+                </object> -->
+            </div>
+            <div id="sev-willkommen" class="clip"></div>
+	    <div id="sev-startxt">
+	      <p class="sev-startxt">
+	    {% for text in welcome_text %}
+	    {{ text.text }}
+	    {% endfor %}
+	    <br><br>
+        </p>
+	    </div>
+	    
+
+                <!-- <p class="sev-startxt">More information soon!</p> -->
+
+
+        </div>
+        
+        <div class="grid__item rechts"></div>
+        
+        <div class="grid__item unten">
+            <div class="social">
+				<div id="facebook"><a href="https://www.facebook.com/sevberlin/" target="_blank"><img src="static/img/facebook.svg" alt="facebook logo"></a></div>
+				<div id="instagram"><a href="https://www.instagram.com/sev.berlin/" target="_blank"><img src="static/img/instagram.svg" alt="instagram logo"></a></div>
+				<div id="resident"><a href="https://www.residentadvisor.net/profile/sevsessions" target="_blank"><img src="static/img/resident-advisor.svg" alt="resident advisor logo"></a></div>
+                <div id="soundcloud"><a href="https://soundcloud.com/sevberlin" target="_blank"><img src="static/img/soundcloud.svg" alt="soundcloud logo"></a></div>
+                <!-- <div class="menu"><a href="#test" target="_parent">TEST</a></div> -->
+			</div>
+        <!-- ENDE Inhaltsbereich mit allen sichtbaren Elementen -->
+        </div>        
+    </div>
+  <a href="#aboutpage"><span>    
+    </span</a>
+  </section>
+</body>
+</html>
