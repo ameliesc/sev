@@ -262,20 +262,20 @@ a, u {
 
 
 
-@media all and ( max-width: 480px ) and ( orientation:portrait ){
+/* @media all and ( max-width: 480px ) and ( orientation:portrait ){ */
 	
-	.grid-container { max-width: 100%; }
-	#sev-logo { width: 38%; left: 32vw; }
-	.mitte_2 { width: 100%; height: 100%; margin: 0; }
-	.icon-bar{max-width: 100%}
-	#sev-startxt { left: 15px; width: 90%; top: 40%; }
-	.sev-startxt { font-size: calc(18px + .4vw); }
-	#sev-willkommen { top: 30%; background-position-x: 115%; background-size: 205%;}
+/* 	.grid-container { max-width: 100%; } */
+/* 	#sev-logo { width: 38%; left: 32vw; } */
+/* 	.mitte_2 { width: 100%; height: 100%; margin: 0; } */
+/* 	.icon-bar{max-width: 100%} */
+/* 	#sev-startxt { left: 15px; width: 90%; top: 40%; } */
+/* 	.sev-startxt { font-size: calc(18px + .4vw); } */
+/* 	#sev-willkommen { top: 30%; background-position-x: 115%; background-size: 205%;} */
 	
-}
+/* } */
 
-@media all and ( max-height: 480px ) and ( orientation:landscape ){
-	#sev-startxt { left: calc(100% - 94%); width: 90%; }
-	.sev-startxt { font-size: calc(18px + .4vw); }
+/* @media all and ( max-height: 480px ) and ( orientation:landscape ){ */
+/* 	#sev-startxt { left: calc(100% - 94%); width: 90%; } */
+/* 	.sev-startxt { font-size: calc(18px + .4vw); } */
 	
-}
+/* } */
