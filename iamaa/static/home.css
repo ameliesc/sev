@@ -248,14 +248,14 @@ img {
     z-index:4;}
 
 .sev-startxt{
-    font-size:1.8vw; 
+    font-size:1.8vw; !important 
     color:#fff;
     text-align:center;
     color: white;
     font-family:'Syne-Bold';
 }
-.sev-startxt1{font-size:1.3vw; color:#fff; text-align:center; font-family:'Syne-Bold';}
-.sev-startxt2{font-size:2.0vw; color:#fff; text-align:center; font-family:'Syne-Bold';}
+.sev-startxt1{font-size:130%; color:#fff; text-align:center; font-family:'Syne-Bold';}
+.sev-startxt2{font-size:130%; color:#fff; text-align:center; font-family:'Syne-Bold';}
 #content {
 	position: absolute;
 	top: 106vh;

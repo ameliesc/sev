@@ -18,9 +18,9 @@ ul li {
   
 }
 
-.sev-txt{font-size:1.5vw; color:#fff; text-align:center; font-family:'Syne-Regular';}
+.sev-txt{font-size:110%; color:#fff; text-align:center; font-family:'Syne-Regular';}
 
-.top-buffer7 { margin-top:7%; }
+.top-buffer7 { margin-top:7% }
 .top-buffer5 { margin-top: 3%}
 .top-buffer-5 { margin-top: -3%}
 
