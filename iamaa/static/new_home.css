@@ -218,7 +218,7 @@ a, u {
 .icon-bar {
   position: fixed;
   top: 80%;
-  left: 1.5%;
+  left: 1.8%;
   color:white;
   z-index:99999;
   -webkit-transform: translateY(-50%);
@@ -230,10 +230,10 @@ a, u {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 12px; !important
+  padding: 19px; !important
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 20px; !important
 }
 
 .icon-bar a:visited {
@@ -249,13 +249,13 @@ a, u {
 
 .facebook{
     display: block;
-    height: 3rem; !important
-    width: 3rem; !important
+    height: 4rem; !important
+    width: 4rem; !important
     line-height: 2.3rem;
     line-width: 1.0rem;
     font-size: 15rem;
     Background-color: black;
-    color:white; 
+    color: white; 
     transition: background-color 0.15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
