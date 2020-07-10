@@ -226,11 +226,16 @@ a, u {
   transform: translateY(-50%);
 }
 
+.description_icon {
+    width: 80px; 
+    height: 80px; 
+    padding: 8px;
+}
 /* Style the icon bar links */
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 19px; !important
+  padding: 1rem; !important
   transition: all 0.3s ease;
   color: white;
   font-size: 20px; !important

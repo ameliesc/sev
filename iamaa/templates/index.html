@@ -150,10 +150,9 @@
 	{% for description in sev_sessions%}
 	
 	<div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-	  <a  href="#{{description.id}}">
+	  <a  href="#{{description.id}}" >
 	    <span>
-	      
-	      <img src="{{description.icon_image.url}}" />
+	      <img src="{{description.icon_image.url}}" class = "description_icon"/>
 	      <h4 class="sev-startxt2"> {{description.title}}</h4>
 	    </span>
 	  </a>
